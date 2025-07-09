@@ -1,0 +1,205 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0 1rem;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.aboutcontainer {
+  display: grid;
+  grid-template-areas: "left right";
+  margin-top: -20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-top: 30px;
+  flex-direction: row;
+}
+
+.about .left {
+  grid-area: left;
+}
+.about .left img {
+  max-height: 30rem;
+  width: auto;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem 50% 0.5rem 0.5rem;
+  -webkit-border-radius: 0.5rem 50% 0.5rem 0.5rem;
+  -moz-border-radius: 0.5rem 50% 0.5rem 0.5rem;
+  -ms-border-radius: 0.5rem 50% 0.5rem 0.5rem;
+  -o-border-radius: 0.5rem 50% 0.5rem 0.5rem;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.about .left img:hover {
+  border-radius: 50% 0.5rem 0.5rem 0.5rem;
+  -webkit-border-radius: 50% 0.5rem 0.5rem 0.5rem;
+  -moz-border-radius: 50% 0.5rem 0.5rem 0.5rem;
+  -ms-border-radius: 50% 0.5rem 0.5rem 0.5rem;
+  -o-border-radius: 50% 0.5rem 0.5rem 0.5rem;
+}
+
+.about .right {
+  margin: auto;
+  grid-area: right;
+}
+
+.about .right .title {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.about h2 {
+  font-weight: 500;
+}
+.about .right > h3 {
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+}
+.about .right > h3 span {
+  font-size: 1.3rem;
+}
+.about .right > p {
+  margin: 0.5rem 0 2rem;
+  text-align: start;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.about .right .btn {
+  padding: 1rem 2rem;
+}
+
+.about .right .skills {
+  text-align: start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about .right .skillscontainer span {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.about .right .skillscontainer .ri {
+  font-size: 24px;
+}
+
+.about .right .skillscontainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about .right .skillscontainer p {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 640px) {
+
+  .aboutcontainer {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-areas:
+      "left"
+      "right";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .right {
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    grid-area: right;
+    text-align: center;
+  
+  
+  }
+
+  .about .left {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .left img {
+    max-height: 15rem;
+    width: auto;
+    grid-area: left;
+   
+  }
+  .about .right > p {
+    text-align: center;
+  
+  }
+
+ 
+}
+@media (max-width: 877px) {
+
+.about .left img {
+    max-height: 20rem;
+    width: auto;
+  }
+
+  .about .left{
+    margin: 0;
+  }
+
+  .about .right{
+    margin: 0;
+  }
+
+  .about .right .title {
+  margin-bottom: 1rem;
+  }
+
+.about h2 {
+  font-size: 1.2rem;
+}
+
+.about .right > h3 {
+  font-size: 1rem;
+}
+.about .right > h3 span {
+  font-size: 1.3rem;
+}
+.about .right > p {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+.about .right .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-top: 0;
+}
+
+.about .right .btn span{
+    font-size: .8rem;
+}
+
+.about .right .skills {
+  text-align: start;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
+}
+
+.about .right .skillscontainer .ri {
+  font-size: 1rem;
+}
+
+.about .right .skillscontainer p {
+  font-size: .5rem;
+}
+
+
+
+
+
+}

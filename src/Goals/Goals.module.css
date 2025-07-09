@@ -1,0 +1,125 @@
+.goals {
+    display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0 1rem;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.goalscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardimage {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardtitle {
+  font-size: 1.5rem; /* Big Title */
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.description {
+  font-size: 0.875rem; /* Smaller description */
+  color: #666;
+  line-height: 1.4;
+}
+
+.goallist {
+  line-height: 1.6;
+  color: #666;
+}
+
+.goallist li {
+  padding-left: 15px;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  list-style-type: "✪";
+  text-align: left;
+  justify-content: first baseline;
+  padding-top: .5rem;
+}
+
+.missionlist {
+  line-height: 1.6;
+  color: #666;
+}
+
+.missionlist li {
+  padding-left: 15px;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  list-style-type: "✪";
+  text-align: left;
+  justify-content: first baseline;
+  padding-top: .5rem;
+}
+
+.vision {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: .5rem;
+}
+
+@media (max-width: 1102px) {
+
+    .goalcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+         flex-direction: row;     
+         align-items: center;    
+        justify-content: flex-start; 
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .card .carditem{
+        margin-right: 1rem;
+
+    }
+
+
+
+
+
+}

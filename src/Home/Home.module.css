@@ -1,0 +1,149 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0 1rem;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.homecontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 20px;
+
+  
+}
+.home .left {
+  margin-top: 3rem;
+}
+.home .left h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+}
+.home .left h1 span {
+  font-size: 3.5rem;
+  color: var(--color-secondary);
+}
+.home .left h3 span {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+.home .left p {
+  padding: 1.6rem 0;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-style: normal;
+  text-align: start;
+}
+.home .left .btn {
+  padding: 1rem 3rem;
+}
+.home .social-icons {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.home .social-icons i {
+  height: 5rem;
+  width: 5rem;
+  box-shadow: var(--shadow);
+  background: var(--color-bg);
+  padding: 0.8rem;
+  margin: 0.7rem;
+  font-weight: 800;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.home .social-icons i:hover {
+  color: var(--color-secondary);
+  box-shadow: var(--inner-shadow);
+}
+.home .right {
+  margin: auto;
+}
+
+.home .right img {
+  max-width: 35rem;
+  height: 500px;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .homecontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .home .right {
+    margin-top: 0;
+    order: 1;
+  }
+
+  .home .left{
+    display: grid;
+    place-items: center;
+    order: 2;
+  }
+
+  .logo {
+    margin-left: -30px;
+    font-size: 1rem;
+  }
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .home .right img {
+    display: block;
+    height: 14rem;
+    max-width: 100%;
+    margin-top: -15px;
+  }
+  .home .left {
+    position: relative;
+    margin-top: -20px;
+  }
+  .home .social-icons {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .home .left h1 {
+    line-height: 2.2rem;
+    margin-bottom: 2px;
+  }
+  .home .left h1 span {
+    font-size: 2.1rem;
+  }
+  .home .left h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .home .left p {
+    font-size: 0.7rem;
+  }
+
+  .home .social-icons i {
+    height: 5rem;
+    width: 5rem;
+    box-shadow: var(--shadow);
+    background: var(--color-bg);
+    padding: 0.8rem;
+    margin: 0.7rem;
+    font-weight: 800;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+  }
+}
