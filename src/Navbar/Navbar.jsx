@@ -18,7 +18,7 @@ function Navbar(){
   
       <nav className={`container ${styles.navbar}`}>
           <a  className={styles.logo}>
-            <span>KEVINPOGI</span>
+            <span>POGI</span>
           </a>
           <input type="checkbox" id={styles.toggler} ref={menuCheckboxRef}/>
           <label for={styles.toggler}><i className="ri-menu-line"></i></label>
