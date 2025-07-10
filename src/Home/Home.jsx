@@ -45,7 +45,7 @@ const Home = ({ name }) => {
           </div>
         </div>
         <div className={styles.right}>
-          <img src="/Kevin.JPG" alt="My Picture" />
+          <img src={`${import.meta.env.BASE_URL}/Kevin.JPG`} alt="My Picture" />
         </div>
       </div>
     </section>

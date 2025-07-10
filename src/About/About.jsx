@@ -7,7 +7,7 @@ const About = ({ name }) => {
     <section name={name} className={styles.about}>
       <div className={`container ${styles.aboutcontainer}`}>
         <div className={styles.left}>
-          <img src="/Kevin2.jpg" alt="Picture of Kevin" />
+          <img src={`${import.meta.env.BASE_URL}/Kevin2.jpg`} alt="Picture of Kevin" />
         </div>
         <div className={styles.right}>
           <div className={styles.title}>
