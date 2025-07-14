@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --color-bg: #e1e1e1;
@@ -164,4 +168,11 @@ h4 {
 
 .btn span:hover::after{
 color: #212121;
+}
+
+@media screen and (max-width: 640px){
+  .container{
+  width: 100%;
+  align-items: center;
+}
 }

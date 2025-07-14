@@ -2,7 +2,7 @@
 
 
 .navbar{
-    width: 100%;
+
     width: var(--width-lg);
     position: sticky;
     z-index: 1000;
@@ -15,30 +15,6 @@
     padding: 1.5rem;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: var(--color-text);
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  box-shadow: var(--shadow);
-  border-radius: 0.5rem;
-  padding: 0.2rem 2rem;
-  background: transparent;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-
-.logo span {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--color-secondary);
-}
 .logo.logo:hover {
   color: #666;
   box-shadow: var(--inner-shadow);
@@ -73,7 +49,7 @@
     display: none;
 }
 
-@media screen and (max-width: 702px){
+@media screen and (max-width: 640px){
 .menu{
     width: 100%;
     max-height: 0;
@@ -82,7 +58,7 @@
 .navlist{
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 0;
     
 }
 
@@ -90,26 +66,19 @@
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    margin-left: auto;
 }
 
 #toggler:checked ~ .menu{
     max-height: 100%;
 }
+
+
+.navbar{
+ justify-content: flex-start;
+ padding: 0;
+ margin: 0.5rem;
+ width: 95%;
 }
-
-@media screen and (max-width: 853px){
-
-.navbar a{
-    font-size: 12px;
-}
-
-.logo{
-    font-size: 12px;
-}
-
-.logo span{
-    font-size: 12px;
-}
-
 
 }

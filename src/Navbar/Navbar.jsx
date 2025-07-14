@@ -17,9 +17,10 @@ function Navbar(){
   return (
   
       <nav className={`container ${styles.navbar}`}>
-          <a  className={styles.logo}>
-            <span>KEVIN</span>
-          </a>
+          <h3>
+          <span className="font-bold text-xl uppercase text-secondary shadow-neu rounded-md px-8 py-[0.2rem] bg-background">
+            KEVIN</span>
+          </h3>
           <input type="checkbox" id={styles.toggler} ref={menuCheckboxRef}/>
           <label for={styles.toggler}><i className="ri-menu-line"></i></label>
           <div className={styles.menu}>
